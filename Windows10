@@ -1,1 +1,20 @@
+pydiction  <git clone https://github.com/rkulla/pydiction.git>
+
+
+不需要任何依赖库，可实现python代码补充
+Pydiction主要包含三个文件：
+python_pydiction.vim  -- Vim plugin that autocompletes Python code.
+complete-dict         -- Dictionary file of Python keywords, modules, etc.
+pydiction.py          -- Python script to add more words to complete-dict.
+
+
+配置需求：
+#- UNIX/LINUX/OSX: Put python_pydiction.vim in ~/.vim/after/ftplugin/
+#- WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin\
+# Assuming you installed Vim to C:\vim\
+
+在vimrc文件中配置如下：
+filetype plugin on
+let g:pydiction_location = '~/.vim/tools/pydiction/complete-dict'
+let g:pydiction_menu_height = 3
 
